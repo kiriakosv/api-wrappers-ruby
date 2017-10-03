@@ -226,5 +226,3 @@ Class | Method
  - [SwaggerClient::UpdatingSegmentCriteriaResponse](docs/UpdatingSegmentCriteriaResponse.md)
  - [SwaggerClient::WithStatistics](docs/WithStatistics.md)
 
-#   a p i - w r a p p e r s - r u b y  
- 
