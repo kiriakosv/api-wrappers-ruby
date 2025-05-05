@@ -261,9 +261,9 @@ module SwaggerClient
     end
 
     def build_request_url(path)
-      # Add leading and trailing slashes to path
       path = "/#{path}".gsub(/\/+/, '/')
-      URI.encode(@config.base_url + path)
+      encoded_path = ERB::Util.url_encode(path).gsub('%2F', '/') # Encode path except slashes
+      "#{@config.base_url}#{encoded_path}"
     end
 
     # Builds the HTTP request body
